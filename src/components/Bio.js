@@ -18,7 +18,7 @@ class Bio extends React.Component {
       >
         <img
           src={profilePic}
-          alt={`Kyle Mathews`}
+          alt={`Taym95`}
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
@@ -28,7 +28,7 @@ class Bio extends React.Component {
         />
         <p>
           Written by <strong>Taym.{' '}</strong>
-          <a href="https://twitter.com/kylemathews">
+          <a href="https://twitter.com/taym95">
             You should follow him on Twitter
           </a>
         </p>

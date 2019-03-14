@@ -2,10 +2,17 @@
   "name": "gatsby-starter-blog",
   "description": "Starter Gatsby Blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Taym95 <haddadi.taym@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
   },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ],
   "dependencies": {
     "gatsby": "^2.0.19",
     "gatsby-plugin-feed": "^2.0.8",
@@ -50,6 +57,7 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
+    "now-build": "npm run build",
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
